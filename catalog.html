@@ -7,44 +7,48 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="mail-header-logo">  
-          <img src="http://placehold.it/150x100" alt="Логотип Berds">
+        <a class="mail-header-logo" href="index.html">  
+          <img src="http://placehold.it/150x100" alt="Логотип Nerds">
         </a>
         <ul class="site-navigation">
             <li><a href="studio.html">Студия</a></li>
             <li><a href="customers.html">Клиенты</a></li>
             <li><a href="shop.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="basket">
-          <li class="basket-link"><a href="basket.html">Корзина</a></li>
+            <li class="navigation-basket"><a class="basket-link" href="basket.html">Корзина</a></li>
         </ul>
       </nav>   
     </header>
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <section class="sidebar">
-        <section class="sidebar-price">
-          <h2>Стоимость:</h2>
-        </section>
-        <section class="sidebar-mesh">
-          <h2>Сетка:</h2>
-          <ul>
-            <li>Адаптивная</li>
-            <li>Фиксированная</li>
-            <li>Резиновая</li>
-          </ul>
-        </section>
-        <section class="sidebar-features">
-          <h2>Особенности:</h2>
-          <ul>
-            <li>Слайдер</li>
-            <li>Блок преимуществ</li>
-            <li>Новости</li>
-            <li>Галерея</li>
-            <li>Корзина</li>
-          </ul>
-        </section>
+        <form>
+          <section class="sidebar-price">
+            <h2>Стоимость:</h2>
+          </section>
+        </form>
+        <form>
+          <section class="sidebar-mesh">
+            <h2>Сетка:</h2>
+            <ul>
+              <li>Адаптивная</li>
+              <li>Фиксированная</li>
+              <li>Резиновая</li>
+            </ul>
+          </section>
+        </form>
+        <form>
+          <section class="sidebar-features">
+            <h2>Особенности:</h2>
+            <ul>
+              <li>Слайдер</li>
+              <li>Блок преимуществ</li>
+              <li>Новости</li>
+              <li>Галерея</li>
+              <li>Корзина</li>
+            </ul>
+          </section>
+        </form>
         <button class="sidebar-button">Показать</button>
       </section>
       <div class="sorting">
@@ -53,24 +57,56 @@
           <li>По цене</li>
           <li>По типу</li>
           <li>По названию</li>
+          <li >По убыванию</li>
+          <li>По возрастанию</li>
         </ul>
       </div>
       <section class="templates">
         <ul>
-          <li class="templates-examples">Sedona</li>
-          <li class="templates-examples">Pink</li>
-          <li class="templates-examples">Borodinski</li>
-          <li class="templates-examples">Mishka</li>
-          <li class="templates-examples">A plus</li>
-          <li class="templates-examples">Kvast</li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="Sedona.html">Sedona</a></h3>    
+            </div>
+          </li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="Pink.html">Pink</a></h3>    
+            </div>
+          </li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="Borodinski.html">Borodinski</a></h3>    
+            </div>
+          </li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="Mishka.html">Mishka</a></h3>    
+            </div>
+          </li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="APlus.html">A plus</a></h3>    
+            </div>
+          </li>
+          <li class="templates-examples">
+            <img src="http://placehold.it/150x100">
+            <div>
+              <h3><a href="Kvast.html">Kvast</a></h3>    
+            </div>
+          </li>
         </ul>
       </section>
       <div class="page">
         <ul>
-          <li><button class="button-page">1</button></li>
-          <li><button class="button-page">2</button></li> 
-          <li><button class="button-page">3</button></li>
-          <li><button class="button-page">Следующая</button></li> 
+          <li><a class="button-page" href="">1</a></li>
+          <li><a class="button-page" href="">2</a></li> 
+          <li><a class="button-page" href="">3</a></li>
+          <li><a class="button-page" href="">Следующая</a></li> 
         </ul>
       </div>  
     </main>
@@ -80,9 +116,8 @@
           <p>191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>тел. +7 (812) 275-75-75
-          </p>
-          <a class="button contscts-button" href="contacts.html">Напишите нам</a>
+          <a class="phone">тел. +7 (812) 275-75-75</a>
+          <a class="button" href="contacts.html">Напишите нам</a>
       </section>
       <div class="footer-social">
         <ul>
@@ -98,10 +133,11 @@
     </footer> 
     <section class="modal modal-basket">
         <h2>Напишите нам</h2>
-        <p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма:</p>
+        <form><p>Ваше имя:</p></form>
+        <form><p>Ваш e-mail:</p></form>
+        <form><p>Текст письма:</p></form>
         <span class="modal-close">x</span>
+        <span class="button">Отправить</span>
     </section>
   </body>
 </html>
