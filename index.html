@@ -40,7 +40,11 @@
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="button" href="">Узнать больше</a>
         </section>
-        <span>Элементы управления</span>
+        <section>
+          <button class="management-slider"><span class="visually-hidden">Слайдер 1</span></button>
+          <button class="management-slider"><span class="visually-hidden">Слайдер 2</span></button>
+          <button class="management-slider"><span class="visually-hidden">Слайдер 3</span></button>
+        </section>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Заказать</h2>
@@ -48,17 +52,17 @@
           <li  class="advantages-item">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button">Заказать</a>  
+            <a href="" class="button">Заказать</a>  
           </li>
           <li  class="advantages-item">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button color-green">Заказать</a>  
+            <a href="" class="button color-green">Заказать</a>  
           </li>
           <li  class="advantages-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button color-yellow">Заказать</a>  
+            <a href="" class="button color-yellow">Заказать</a>  
           </li>
         </ul>  
       </section>
@@ -139,7 +143,7 @@
           <p>191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8
           </p>
-          <a class="phone" href=”tel:+78122757575”> +7 (812) 275-75-75</a>
+          <a class="phone" href="tel:+78122757575"> +7 (812) 275-75-75</a>
           <a class="button" href="contacts.html">Напишите нам</a>
       </section>
       <div class="footer-social">
@@ -156,11 +160,22 @@
     </footer> 
     <section class="modal modal-basket">
         <h2>Напишите нам</h2>
-        <form><p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма:</p>
-        <span class="button">Отправить</span></form>
-        <span class="modal-close">x</span>
+        <form class="basket-form" action="http://echo.htmlacademy.ru" method="post">
+          <p class="basket-item">
+            <label for="basket-date">Ваше имя:</label>
+            <input id="basket-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="basket-item">
+            <label for="basket-mail">Ваш e-mail:</label>
+            <input id="basket-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
+          </p>
+          <p class="basket-item">
+            <label for="basket-text">Текст письма:</label>
+            <input id="basket-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

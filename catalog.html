@@ -22,29 +22,53 @@
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <section class="sidebar">
-        <form>
-          <section class="sidebar-price">
-            <h2>Стоимость:</h2>
-          </section>
-          <section class="sidebar-mesh">
-            <h2>Сетка:</h2>
+        <form class="filter" method="get" action="http://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
             <ul>
-              <li>Адаптивная</li>
-              <li>Фиксированная</li>
-              <li>Резиновая</li>
+              <li class="filter-option">
+                <input id="filter-adaptive" class="visually-hudden filter-input filter-input-radio" type="radio" name="adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-fixed" class="visually-hudden filter-input filter-input-radio" type="radio" name="fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-rubber" class="visually-hudden filter-input filter-input-radio" type="radio" name="rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
             </ul>
-          </section>
-          <section class="sidebar-features">
-            <h2>Особенности:</h2>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
             <ul>
-              <li>Слайдер</li>
-              <li>Блок преимуществ</li>
-              <li>Новости</li>
-              <li>Галерея</li>
-              <li>Корзина</li>
+              <li class="filter-option">
+                <input id="filter-slider" class="visually-hudden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+               <li class="filter-option">
+                <input id="filter-benefits" class="visually-hudden filter-input filter-input-checkbox" type="checkbox" name="benefits">
+                <label for="filter-benefits">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-news" class="visually-hudden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-gallery" class="visually-hudden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-basket" class="visually-hudden filter-input filter-input-checkbox" type="checkbox" name="basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
             </ul>
-          </section>
-          <button class="sidebar-button">Показать</button>  
+          </fieldset>
+          <button type="submit" class="sidebar-button">Показать</button>  
         </form>
       </section>
       <div class="sorting">
@@ -142,13 +166,22 @@
     </footer> 
     <section class="modal modal-basket">
         <h2>Напишите нам</h2>
-        <form>
-          <p>Ваше имя:</p>
-          <p>Ваш e-mail:</p>
-          <p>Текст письма:</p>
-          <span class="button">Отправить</span>
+        <form class="basket-form" action="http://echo.htmlacademy.ru" method="post">
+          <p class="basket-item">
+            <label for="basket-date">Ваше имя:</label>
+            <input id="basket-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="basket-item">
+            <label for="basket-mail">Ваш e-mail:</label>
+            <input id="basket-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
+          </p>
+          <p class="basket-item">
+            <label for="basket-text">Текст письма:</label>
+            <input id="basket-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
         </form>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
