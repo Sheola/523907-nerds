@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+    
+  background-color: #ffffff;   
+}
+
+.mail-header-logo:hover {
+  opacity: 0.8; 
+}
+
+.mail-header-logo:focus {
+  opacity: 0.3;  
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  text-decoration-color: #fb565a;
+}
+
+
+.page-title {
+  font-size: 55px;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item h3 {
+  font-size: 24px;
+}
+
+.button {
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color : #e74246;
+}
+
+.button:focus {
+  background-color: #d7373b;
+  opacity: 0.3;
+}
+
+.color-green {
+  background-color: #00ca74;
+}
+
+.color-green:hover {
+  background-color : #00bc6c;
+}
+
+.color-green:focus {
+  background-color: #00aa62;
+  opacity: 0.3;
+}
+
+.color-yellow {
+  background-color: #efc84a;
+}
+
+.color-yellow:hover {
+  background-color : #eab534;
+}
+
+.color-yellow:focus {
+  background-color: #e5a722;
+  opacity: 0.3;
+}
+
+.studio-info b {
+  font-size: 45px;
+}   
+
+.studio-list {
+  list-style: none;  
+}
+
+.work-choice {
+  list-style: none;  
+}
+
+.studio-table td {
+  font-size: 45px;
+}
+
+.partners-list {
+  list-style: none;  
+}
+
+.partners-list img{
+  opacity: 0.2;
+}
+
+.partners-list img:hover {
+  opacity: 1.0;
+}
+
+.partners-list img:focus {
+  opacity: 0.1;
+}
+
+.footer-contacts h2 {
+  font-size: 18px;
+}
+
+.footer-contacts p {
+  color: #666666;   
+}
+
+.phone {
+  color: #666666;
+}
+
+.basket-item input {
+  border-color: #d7dcde;
+}
+
+.basket-item input:hover {
+  border-color: #b4b9bb;
+}
+
+.basket-item input:focus {
+  border-color: #000000;
+}
+
+
+.main-footer b {
+  font-size: 36px;
+}
+
+.modal-basket h2 {
+  font-size: 45px;
+}
+
+.main-header h1 {
+  font-size: 55px;
+}
+
+.sidebar legend {
+  font-size: 18px;
+}
+
+.sidebar fieldset {
+  border: none;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.filter-input + label {
+  color: #283136;
+}
+
+.filter-input:hover + label {
+  color: #000000;
+}
+
+.filter-input:focus + label {
+  color: #283136;
+  opacity: 0.3;
+}
+
+.sidebar-button {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.sidebar-button:hover {
+  background-color : #dfdfdf;
+}
+
+.sidebar-button:disabled {
+  background-color: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sorting h2 {
+  font-size: 18px;
+}
+
+.sorting-selection {
+  list-style: none;
+}
+
+.sorting-selection  a {
+  font-size: 14px;
+  color: #b2b2b2;
+}
+
+.sorting-selection  a:hover {
+  color: #666666;
+}
+
+.sorting-selection  a:focus
+.sorting-selection  a:active {
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
