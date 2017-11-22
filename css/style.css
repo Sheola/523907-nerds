@@ -32,10 +32,14 @@ a {
 }
 
 .site-navigation a {
+  font-size: 16px;
+  line-height: 30px;
   color: #000000;
+  font-weight: 500;
 }
 
 .site-navigation a:hover {
+  
   color: #fb565a;
 }
 
@@ -48,9 +52,17 @@ a {
   text-decoration-color: #fb565a;
 }
 
-
 .page-title {
+  font-weight: 500;
   font-size: 55px;
+  line-height: 55px;
+}
+
+.slider p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
 }
 
 .advantages-list {
@@ -58,12 +70,24 @@ a {
 }
 
 .advantages-item h3 {
+  font-weight: 700;
   font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
 }
 
 .button {
   background-color: #fb565a;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .button:hover {
@@ -102,19 +126,50 @@ a {
 }
 
 .studio-info b {
+  font-weight: 500;
   font-size: 45px;
-}   
+  line-height: 45px;
+}  
+
+.studio-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}  
 
 .studio-list {
   list-style: none;  
+}
+
+.info-work {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .work-choice {
   list-style: none;  
 }
 
+.work-choice li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136; 
+}
+
 .studio-table td {
+  font-weight: 700;
   font-size: 45px;
+  line-height: 10px;
+}
+
+.studio-table th {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136; 
 }
 
 .partners-list {
@@ -134,15 +189,23 @@ a {
 }
 
 .footer-contacts h2 {
+  font-weight: 700;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .footer-contacts p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   color: #666666;   
 }
 
 .phone {
-  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666; 
 }
 
 .basket-item input {
@@ -157,21 +220,42 @@ a {
   border-color: #000000;
 }
 
-
 .main-footer b {
+  font-weight: 700;
   font-size: 36px;
+  line-height: 36px;
+}
+
+.main-footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
 }
 
 .modal-basket h2 {
+  font-weight: 500;
   font-size: 45px;
+  line-height: 45px;
+}
+
+.basket-item label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .main-header h1 {
+  font-weight: 500;
   font-size: 55px;
+  line-height: 55px;
 }
 
 .sidebar legend {
+  font-weight: 700;
   font-size: 18px;
+  line-height: 30px;
+  color: #444444;
 }
 
 .sidebar fieldset {
@@ -180,6 +264,13 @@ a {
 
 .sidebar ul {
   list-style: none;
+}
+
+.filter-option label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
 }
 
 .filter-input + label {
@@ -196,6 +287,9 @@ a {
 }
 
 .sidebar-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
   background-color: #eeeeee;
   color: #000000;
 }
@@ -210,16 +304,19 @@ a {
 }
 
 .sorting h2 {
+  font-weight: 700;
   font-size: 18px;
+  line-height: 18px;
+}
+
+.sorting-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .sorting-selection {
   list-style: none;
-}
-
-.sorting-selection  a {
-  font-size: 14px;
-  color: #b2b2b2;
 }
 
 .sorting-selection  a:hover {
@@ -229,6 +326,30 @@ a {
 .sorting-selection  a:focus
 .sorting-selection  a:active {
   color: #000000;
+}
+
+.emerge {
+  background-color: #eeeeee;
+}
+
+.emerge h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.emerge p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.button-page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #eeeeee;
 }
 
 
