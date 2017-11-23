@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
     
   background-color: #ffffff;   
 }
@@ -36,6 +36,7 @@ a {
   line-height: 30px;
   color: #000000;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover {
@@ -73,6 +74,7 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .advantages-item p {
@@ -88,6 +90,8 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .button:hover {
@@ -146,6 +150,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .work-choice {
@@ -192,6 +197,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .footer-contacts p {
@@ -250,6 +256,7 @@ a {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
 
 .sidebar legend {
@@ -257,6 +264,8 @@ a {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .sidebar fieldset {
@@ -308,6 +317,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sorting-text {
@@ -333,10 +343,13 @@ a {
   background-color: #eeeeee;
 }
 
-.emerge h3 {
+.emerge a {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .emerge p {
@@ -344,6 +357,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  text-align: center;
 }
 
 .button-page {
@@ -351,6 +365,16 @@ a {
   font-size: 16px;
   line-height: 18px;
   background-color: #eeeeee;
+  text-align: center;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 
