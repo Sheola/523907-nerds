@@ -16,7 +16,7 @@
         <ul class="site-navigation">
             <li><a href="studio.html">Студия</a></li>
             <li><a href="customers.html">Клиенты</a></li>
-            <li><a href="shop.html">Магазин</a></li>
+            <li><a class="link-catalog">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
             <li class="navigation-basket"><a class="basket-link" href="basket.html">Корзина</a></li>
         </ul>
@@ -80,8 +80,8 @@
           <li><a class="sorting-text">По цене</a></li>
           <li><a class="sorting-text">По типу</a></li>
           <li><a class="sorting-text">По названию</a></li>
-          <li><a class="sorting-order">По убыванию</a></li>
-          <li><a class="sorting-order">По возрастанию</a></li>
+          <li><a class="sorting-order"><span class="visually-hidden">По убыванию</span></a></li>
+          <li><a class="sorting-order"><span class="visually-hidden">По возрастанию</span></a></li>
         </ul>
       </div>
       <section class="templates">
@@ -157,9 +157,9 @@
       </section>
       <div class="footer-social">
         <ul>
-          <li class="social-button"><a href="vk.html">Вк</a></li>
-          <li class="social-button"><a href="fb.html">Фейсбук</a></li>
-          <li class="social-button"><a href="inst.html">Инстаграм</a></li> 
+          <li class="social-button-"><a href="vk.html"><span class="visually-hidden">Вк</span></a></li>
+          <li class="social-button"><a href="fb.html"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-button"><a href="inst.html"><span class="visually-hidden">Инстаграм</span></a></li> 
         </ul>
       </div>
       <p>
@@ -167,20 +167,20 @@
         Скидка 10% для друзей из социальных сетей.
       </p> 
     </footer> 
-    <section class="modal modal-basket">
+    <section class="modal modal-feedback">
         <h2>Напишите нам</h2>
-        <form class="basket-form" action="http://echo.htmlacademy.ru" method="post">
-          <p class="basket-item">
-            <label for="basket-date">Ваше имя:</label>
-            <input id="basket-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+          <p class="feedback-item">
+            <label for="feedback-date">Ваше имя:</label>
+            <input id="feedback-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="basket-item">
-            <label for="basket-mail">Ваш e-mail:</label>
-            <input id="basket-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
+          <p class="feedback-item">
+            <label for="feedback-mail">Ваш e-mail:</label>
+            <input id="feedback-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
           </p>
-          <p class="basket-item">
-            <label for="basket-text">Текст письма:</label>
-            <input id="basket-text" type="text" name="text" value="" placeholder="В свободной форме">
+          <p class="feedback-item">
+            <label for="feedback-text">Текст письма:</label>
+            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>

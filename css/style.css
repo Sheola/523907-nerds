@@ -40,7 +40,6 @@ a {
 }
 
 .site-navigation a:hover {
-  
   color: #fb565a;
 }
 
@@ -85,6 +84,7 @@ a {
 }
 
 .button {
+  font: inherit;
   background-color: #fb565a;
   color: #ffffff;
   font-size: 16px;
@@ -92,6 +92,7 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -100,7 +101,7 @@ a {
 
 .button:focus {
   background-color: #d7373b;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .color-green {
@@ -135,15 +136,15 @@ a {
   line-height: 45px;
 }  
 
-.studio-info p {
+.studio-list {
+  list-style: none;  
+}
+
+.info-tagline{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-}  
-
-.studio-list {
-  list-style: none;  
 }
 
 .info-work {
@@ -151,6 +152,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  color: #283136;
 }
 
 .work-choice {
@@ -200,7 +202,7 @@ a {
   text-transform: uppercase;
 }
 
-.footer-contacts p {
+.footer-address {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -214,16 +216,21 @@ a {
   color: #666666; 
 }
 
-.basket-item input {
+.feedback-item input {
   border-color: #d7dcde;
 }
 
-.basket-item input:hover {
+.feedback-item input:hover {
   border-color: #b4b9bb;
 }
 
-.basket-item input:focus {
+.feedback-item input:focus {
   border-color: #000000;
+  outline: inherit;
+}
+
+.feedback-item input:invalid {
+  border-color: #e74246;
 }
 
 .main-footer b {
@@ -233,20 +240,20 @@ a {
   color: #000000;
 }
 
-.main-footer p {
+.footer-sale {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
 }
 
-.modal-basket h2 {
+.modal-feedback h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
-.basket-item label {
+.feedback-item label {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -302,15 +309,17 @@ a {
   line-height: 18px;
   background-color: #eeeeee;
   color: #000000;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .sidebar-button:hover {
   background-color : #dfdfdf;
 }
 
-.sidebar-button:disabled {
+.sidebar-button:focus {
   background-color: #d5d5d5;
-  opacity: 0.3;
+  outline: inherit;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting h2 {
@@ -367,6 +376,21 @@ a {
   background-color: #eeeeee;
   text-align: center;
   color: #000000;
+  
+}
+
+.button-page:hover {
+  background-color: #dfdfdf;
+}
+
+.button-page:focus {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-page:active {
+  background-color: #ffffff;
+  border: 4px solid #dbdbdb;
 }
 
 .visually-hidden {
@@ -376,6 +400,24 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+.footer-social ul {
+  list-style: none;
+}
+
+.link-catalog {
+  padding-bottom: 9px;
+  border-bottom: 2px solid #fb565a;
+}
+
+.emerge button:focus {
+  color: #ffffff;
+}
+
+
+
+
+
 
 
 

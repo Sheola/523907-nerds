@@ -16,7 +16,7 @@
         <ul class="site-navigation">
             <li><a href="studio.html">Студия</a></li>
             <li><a href="customers.html">Клиенты</a></li>
-            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
             <li class="navigation-basket"><a class="basket-link" href="basket.html">Корзина</a></li>
         </ul>
@@ -73,7 +73,7 @@
         <ul class="studio-list">
           <li class="studio-info">
             <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+            <p class="info-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
             <p class="info-work">Выполняем заказы на разработку:</p>
               <ul class="work-choice">
                 <li>Веб-сайтов любой сложности</li>
@@ -143,7 +143,7 @@
       <img src="img/map.png" alt="Карта">
       <section class="footer-contacts">
           <h2>Nёrds design studio</h2>
-          <p>191186, Санкт-Петербург,<br>
+          <p class="footer-address">191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8
           </p>
           <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
@@ -151,30 +151,30 @@
       </section>
       <div class="footer-social">
         <ul>
-          <li class="social-button-"><a href="vk.html">Вк</a></li>
-          <li class="social-button"><a href="fb.html">Фейсбук</a></li>
-          <li class="social-button"><a href="inst.html">Инстаграм</a></li> 
+          <li class="social-button-"><a href="vk.html"><span class="visually-hidden">Вк</span></a></li>
+          <li class="social-button"><a href="fb.html"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-button"><a href="inst.html"><span class="visually-hidden">Инстаграм</span></a></li> 
         </ul>
       </div>
-      <p>
+      <p class="footer-sale">
         <b>Давайте дружить, это выгодно</b>
         Скидка 10% для друзей из социальных сетей.
       </p> 
     </footer> 
-    <section class="modal modal-basket">
+    <section class="modal modal-feedback">
         <h2>Напишите нам</h2>
-        <form class="basket-form" action="http://echo.htmlacademy.ru" method="post">
-          <p class="basket-item">
-            <label for="basket-date">Ваше имя:</label>
-            <input id="basket-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+          <p class="feedback-item">
+            <label for="feedback-date">Ваше имя:</label>
+            <input id="feedback-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="basket-item">
-            <label for="basket-mail">Ваш e-mail:</label>
-            <input id="basket-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
+          <p class="feedback-item">
+            <label for="feedback-mail">Ваш e-mail:</label>
+            <input id="feedback-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
           </p>
-          <p class="basket-item">
-            <label for="basket-text">Текст письма:</label>
-            <input id="basket-text" type="text" name="text" value="" placeholder="В свободной форме">
+          <p class="feedback-item">
+            <label for="feedback-text">Текст письма:</label>
+            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
