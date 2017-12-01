@@ -10,44 +10,48 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="mail-header-logo">  
-          <img src="img/nerds-logo.svg" width=160 height=65 alt="Логотип Nerds">
-        </a>
-        <ul class="site-navigation">
+        <div class="container">
+          <a class="main-header-logo">  
+            <img src="img/nerds-logo.svg" width=160 height=65 alt="Логотип Nerds">
+          </a>
+          <ul class="site-navigation">
             <li><a href="studio.html">Студия</a></li>
             <li><a href="customers.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <li class="navigation-basket"><a class="basket-link" href="basket.html">Корзина</a></li>
-        </ul>
-      </nav>   
+          </ul>
+          <ul class="navigation-basket"><li><a class="basket-link" href="basket.html">Корзина</a></li></ul>
+        </div>
+      </nav>     
     </header>
     <main class="container">
       <h1 class="visually-hidden">Nerds</h1>
       <section class="slider">
         <section class="slider-1">
+          <div class="slider-info">
+            <b class="page-title">Долго, дорого, скрупулезно.</b>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
           <img src="img/slide1.png" alt="Слайдер 1">
-          <b class="page-title">Долго, дорого, скрупулезно.</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button" href="">Узнать больше</a>
         </section>
         <section class="slider-2">
+          <div class="slider-info">
+            <b class="page-title">Любим математику как никто другой</b>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
           <img src="img/slide2.png" alt="Слайдер 2">
-          <b class="page-title">Любим математику как никто другой</b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <a class="button" href="">Узнать больше</a>
         </section>
         <section class="slider-3">
+          <div class="slider-info">
+            <b class="page-title">Только ночь, только хардкор</b>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="">Узнать больше</a>
+          </div>
           <img src="img/slide3.png" alt="Слайдер 3">
-          <b class="page-title">Только ночь, только хардкор</b>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="">Узнать больше</a>
         </section>
-        <section>
-          <button class="management-slider"><span class="visually-hidden">Слайдер 1</span></button>
-          <button class="management-slider"><span class="visually-hidden">Слайдер 2</span></button>
-          <button class="management-slider"><span class="visually-hidden">Слайдер 3</span></button>
-        </section>
+        
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Заказать</h2>
@@ -69,98 +73,107 @@
           </li>
         </ul>  
       </section>
-      <section class="studio">
-        <ul class="studio-list">
-          <li class="studio-info">
-            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
-            <p class="info-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-            <p class="info-work">Выполняем заказы на разработку:</p>
-              <ul class="work-choice">
-                <li>Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для IOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-              </ul>
+      
+     <section class="studio">
+      <div class="studio-info">
+        <div class="studio-info-text">
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
+          <p class="info-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+          <p class="info-work">Выполняем заказы на разработку:</p>
+          <ul class="work-choice">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для IOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="studio-info-table">
+          <p class="info-work">С 2004 года любим точность во всем:</p>
+            <table class="studio-table">
+              <tr>
+                <td>
+                  146<sup>%</sup> 
+                </td>
+                <td>
+                  100<sup>%</sup>
+                </td>
+                <td>
+                  50<sup>%</sup>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Уровень самооотдачи
+                </th>
+                <th>
+                  Соблюдение сроков
+                </th>
+                <th>
+                  Минимальная предоплата
+                </th>
+              </tr>
+            </table>
+        </div>
+      </div>
+      <ul class="partners-list">
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <span class="visually-hidden">HtmlAcademy</span>
+              <img src="img/logo-htmlacademy.png" alt="HtmlAcademy">
+            </a>
           </li>
-          <li class="studio-info">
-              <p class="info-work">С 2004 года любим точность во всем:</p>
-              <table class="studio-table">
-                <tr>
-                  <td>
-                    146<sup>%</sup> 
-                  </td>
-                  <td>
-                    100<sup>%</sup>
-                  </td>
-                  <td>
-                    50<sup>%</sup>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    Уровень самооотдачи
-                  </th>
-                  <th>
-                    Соблюдение сроков
-                  </th>
-                  <th>
-                    Минимальная предоплата
-                  </th>
-                </tr>
-              </table>
+          <li>
+            <a href="boridinski.html">
+              <span class="visually-hidden">Boridinski</span>
+              <img src="img/logo-borodincki.png" alt="Boridinski">
+            </a>
           </li>
-          <li class="info-partners">
-            <ul class="partners-list">
-              <li>
-                <a href="htmlacademy.html">
-                  <span class="visually-hidden">HtmlAcademy</span>
-                  <img src="img/logo-htmlacademy.png" alt="HtmlAcademy">
-                </a>
-              </li>
-              <li>
-                <a href="boridinski.html">
-                  <span class="visually-hidden">Boridinski</span>
-                  <img src="img/logo-borodincki.png" alt="Boridinski">
-                </a>
-              </li>
-              <li>
-                <a href="pink.html">
-                  <span class="visually-hidden">Pink</span>
-                  <img src="img/logo-pink.png" alt="Pink">
-                </a>
-              </li>
-              <li>
-                <a href="mishka.html">
-                  <span class="visually-hidden">Mishka</span>
-                  <img src="img/logo-mishka.png" alt="Mishka">
-                </a>
-              </li>
-            </ul>
+          <li>
+            <a href="pink.html">
+              <span class="visually-hidden">Pink</span>
+              <img src="img/logo-pink.png" alt="Pink">
+            </a>
           </li>
-        </ul>
+          <li>
+            <a href="mishka.html">
+              <span class="visually-hidden">Mishka</span>
+              <img src="img/logo-mishka.png" alt="Mishka">
+            </a>
+          </li>
+       </ul>
       </section>
+      
     </main>
     <footer class="main-footer">
-      <img src="img/map.png" alt="Карта">
-      <section class="footer-contacts">
-          <h2>Nёrds design studio</h2>
-          <p class="footer-address">191186, Санкт-Петербург,<br>
+      <div class="container">
+        <div class="footer-map-contacts">
+          <img src="img/map.png" alt="Карта">
+          <section class="footer-contacts">
+            <h2>Nёrds design studio</h2>
+            <p class="footer-address">191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8
-          </p>
-          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="button" href="contacts.html">Напишите нам</a>
-      </section>
-      <div class="footer-social">
-        <ul>
-          <li class="social-button-"><a href="vk.html"><span class="visually-hidden">Вк</span></a></li>
-          <li class="social-button"><a href="fb.html"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="social-button"><a href="inst.html"><span class="visually-hidden">Инстаграм</span></a></li> 
-        </ul>
+            </p>
+            <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button" href="contacts.html">Напишите нам</a>
+            </section>
+        </div> 
+      
+        
+        
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <ul>
+              <li class="social-button-"><a href="vk.html"><span class="visually-hidden">Вк</span></a></li>
+              <li class="social-button"><a href="fb.html"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="social-button"><a href="inst.html"><span class="visually-hidden">Инстаграм</span></a></li> 
+            </ul>
+          </div>
+          <p class="footer-sale">
+            <b>Давайте дружить, это выгодно</b>
+            Скидка 10% для друзей из социальных сетей.
+          </p> 
+        </div>
       </div>
-      <p class="footer-sale">
-        <b>Давайте дружить, это выгодно</b>
-        Скидка 10% для друзей из социальных сетей.
-      </p> 
-    </footer> 
+    </footer>
     <section class="modal modal-feedback">
         <h2>Напишите нам</h2>
         <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
@@ -180,5 +193,6 @@
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+    
   </body>
 </html>
