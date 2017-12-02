@@ -126,22 +126,22 @@ a {
   padding: 0;
   background-color: #eeeeee;
   margin-bottom: 80px;
+  position: relative;
 }
 
-.slider-1 {
+.slider-item {
   display: flex;
   justify-content: space-between;
 }
 
-.slider-2 {
-  display: flex;
-  justify-content: space-between;
+.slider-item {
+  display: none;
 }
 
-.slider-3 {
-  display: flex;
-  justify-content: space-between;
+.slider-item:nth-child(4) {
+  display: block;
 }
+
 
 .slider-info .page-title {
   width: 360px;
@@ -200,6 +200,36 @@ a {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  display: block;
+  padding: 13px 0;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  
+}
+
+.slider-info .button{
+  width: 240px;
+} 
+
+.advantages-item .button {
+  width: 160px;
+}
+
+.footer-contacts .button {
+  width: 220px;
+}
+
+.feedback-form .button {
+  width: 260px;
+}
+
+.sidebar-button {
+  width: 260px;
+}
+
+.emerge .button {
+  width: 200px;
 }
 
 .button:hover {
@@ -333,6 +363,8 @@ a {
   margin: 0;
   padding: 0;
   width: 1160px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .partners-list img{
@@ -585,10 +617,9 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  margin: -1px;
+  clip: rect(0, 0, 0, 0);
 }
 
 .footer-social ul {
@@ -787,8 +818,16 @@ a {
   width: 260px;
 }
 
+.modal {
+  display: none;
+}
 
 
+
+.partners-item {
+  width: 260px;
+  margin: auto;
+}
 
 
 
