@@ -20,7 +20,6 @@ body {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  
 }
 
 .mail-header-logo:hover {
@@ -130,17 +129,55 @@ a {
 }
 
 .slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
   display: flex;
   justify-content: space-between;
 }
 
-.slider-item {
-  display: none;
+
+.slider-controls i {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  
 }
 
-.slider-item:nth-child(4) {
-  display: block;
+.slider-controls i::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
 }
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls .active::before {
+  
+}
+
+
 
 
 .slider-info .page-title {
@@ -388,6 +425,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .footer-bottom {
@@ -551,6 +589,8 @@ a {
 
 .sorting-selection {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-selection  a:hover {
@@ -590,7 +630,16 @@ a {
   background-color: #eeeeee;
   text-align: center;
   color: #000000;
-  
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  padding: 13px 0;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+
 }
 
 .button-page[href]:hover {
@@ -611,6 +660,17 @@ a {
 }
 
 .button-page-active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  padding: 9px 0;
+  text-decoration: none;
+  border-radius: 3px;
   background-color: #ffffff;
   border: 4px solid #dbdbdb;
 }
@@ -807,6 +867,7 @@ a {
 .templates-examples {
   width: 360px;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .page-number {
@@ -822,13 +883,32 @@ a {
   display: none;
 }
 
-
-
 .partners-item {
   width: 260px;
   margin: auto;
 }
 
+.footer-contacts {
+  position: absolute;
+  width: 320px;
+  background-color: #ffffff;
+  top: 55px;
+}
 
+.footer-map-contacts img {
+  position: relative;
+  left: -140px;
+}
+
+.emerge {
+  position: absolute;
+  bottom: 0;
+  width: 360px;
+  display: none;
+}
+
+.templates-examples:hover .emerge{
+  display: block;
+}
 
 
