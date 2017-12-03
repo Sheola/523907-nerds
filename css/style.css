@@ -1,8 +1,4 @@
-html,
-body {
-  min-width: 1160px;
-  min-height: 2476px;
-}
+
 
 body {
   margin: 0;
@@ -890,14 +886,14 @@ a {
 
 .footer-contacts {
   position: absolute;
+  top: -370px;
   width: 320px;
   background-color: #ffffff;
-  top: 55px;
 }
 
 .footer-map-contacts img {
   position: relative;
-  left: -140px;
+  /*left: -140px;*/
 }
 
 .emerge {
@@ -909,6 +905,22 @@ a {
 
 .templates-examples:hover .emerge{
   display: block;
+}
+
+.footer-map-contacts {
+  text-align: center;
+}
+
+.footer-map-contacts img{
+  width: 100%;
+  height: auto;
+}
+
+.footer-contacts-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
 
 
