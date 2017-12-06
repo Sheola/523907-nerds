@@ -31,6 +31,19 @@
           <form class="filter" method="get" action="http://echo.htmlacademy.ru">
             <fieldset class="filter-cost">
               <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-mesh">
               <legend>Сетка:</legend>
@@ -81,58 +94,58 @@
           <div class="sorting">
             <h2>Сортировать:</h2>
             <ul class="sorting-selection">
-              <li><a class="sorting-text">По цене</a></li>
+              <li><a class="sorting-text sorting-active">По цене</a></li>
               <li><a class="sorting-text">По типу</a></li>
               <li><a class="sorting-text">По названию</a></li>
-              <li><a class="sorting-order"><span class="visually-hidden">По убыванию</span></a></li>
-              <li><a class="sorting-order"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li><a class="sorting-order sorting-active"><div class="icon-down"><span class="visually-hidden">По убыванию</span></div></a></li>
+              <li><a class="sorting-order"><div class="icon-up"><span class="visually-hidden">По возрастанию</span></div></a></li>
             </ul>
           </div>
           <section class="templates">
             <ul>
               <li class="templates-examples">
-                <img src="img/img-sedona.jpg" alt="Sedona">
-                <div class="emerge">
+                <div class="browser"><img src="img/img-sedona.jpg" alt="Sedona"></div>
+                <div class="emerge emerge-width-1">
                   <h3><a href="Sedona.html">Sedona</a></h3>
                   <p>Информационный сайт для туристов</p>
                   <span class="button">9 900 руб.</span> 
                 </div>
               </li>
               <li class="templates-examples">
-                <img src="img/img-pink.jpg" alt="Pink">
-                <div  class="emerge">
+                <div class="browser"><img src="img/img-pink.jpg" alt="Pink"></div>
+                <div  class="emerge emerge-width-2">
                   <h3><a href="Pink.html">Pink APP</a></h3>
                   <p>Продуктовый лендинг приложений для iOS и Android</p>
                   <span class="button">9 900 руб.</span> 
                 </div>
               </li>
               <li class="templates-examples">
-                <img src="img/img-barbershop.jpg" alt="Borodinski">
-                <div  class="emerge">
+                <div class="browser"><img src="img/img-barbershop.jpg" alt="Borodinski"></div>
+                <div  class="emerge emerge-width-1">
                   <h3><a href="Borodinski.html">barbershop</a></h3>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
                   <span class="button">9 900 руб.</span> 
                </div>
               </li>
               <li class="templates-examples">
-                <img src="img/img-mishka.jpg" alt="Mishka">
-                <div  class="emerge">
+                <div class="browser"><img src="img/img-mishka.jpg" alt="Mishka"></div>
+                <div  class="emerge emerge-width-1">
                   <h3><a href="Mishka.html">Mishka</a></h3> 
                   <p>Интернет-магазин вязаных игрушек</p>
                   <span class="button">9 900 руб.</span> 
                 </div>
               </li>
               <li class="templates-examples">
-                <img src="img/img-aplus.jpg" alt="A plus">
-                <div  class="emerge">
+                <div class="browser"><img src="img/img-aplus.jpg" alt="A plus"></div>
+                <div  class="emerge emerge-width-2">
                   <h3><a href="APlus.html">A plus</a></h3>
                   <p>Лендинг курсов повышения квалификации</p>
                   <span class="button">9 900 руб.</span> 
                 </div>
               </li>
               <li class="templates-examples">
-                <img src="img/img-kvast.jpg" alt="Kvast">
-                <div  class="emerge">
+                <div class="browser"><img src="img/img-kvast.jpg" alt="Kvast"></div>
+                <div  class="emerge emerge-width-2">
                   <h3><a href="Kvast.html">Кваст</a></h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <span class="button">9 900 руб.</span> 
@@ -152,9 +165,9 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <div class="footer-map-contacts">
-          <img src="img/map.png" alt="Карта">
+      <div class="footer-map-contacts">
+        <img src="img/map.png" alt="Карта">
+        <div class="footer-contacts-container">
           <section class="footer-contacts">
             <h2>Nёrds design studio</h2>
             <p class="footer-address">191186, Санкт-Петербург,<br>
@@ -163,20 +176,19 @@
             <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             <a class="button" href="contacts.html">Напишите нам</a>
             </section>
-        </div> 
-      
-        
-        
+        </div>
+      </div> 
+      <div class="container">
         <div class="footer-bottom">
           <div class="footer-social">
             <ul>
-              <li class="social-button-"><a href="vk.html"><span class="visually-hidden">Вк</span></a></li>
-              <li class="social-button"><a href="fb.html"><span class="visually-hidden">Фейсбук</span></a></li>
-              <li class="social-button"><a href="inst.html"><span class="visually-hidden">Инстаграм</span></a></li> 
+              <li class="social-button"><a href="vk.html"><div class="social-button-vk"><span class="visually-hidden">Вк</span></div></a></li>
+              <li class="social-button"><a href="fb.html"><div class="social-button-fb"><span class="visually-hidden">Фейсбук</span></div></a></li>
+              <li class="social-button"><a href="inst.html"><div class="social-button-insta"><span class="visually-hidden">Инстаграм</span></div></a></li> 
             </ul>
           </div>
           <p class="footer-sale">
-            <b>Давайте дружить, это выгодно</b>
+            <b>Давайте дружить, это выгодно!</b>
             Скидка 10% для друзей из социальных сетей.
           </p> 
         </div>
