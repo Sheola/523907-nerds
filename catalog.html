@@ -34,7 +34,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar" style="margin-left: 0%; width: 72%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -187,16 +187,17 @@
               <li class="social-button"><a href="inst.html"><div class="social-button-insta"><span class="visually-hidden">Инстаграм</span></div></a></li> 
             </ul>
           </div>
-          <p class="footer-sale">
-            <b>Давайте дружить, это выгодно!</b>
-            Скидка 10% для друзей из социальных сетей.
-          </p> 
+          <div class="footer-sale">
+            <p class="footer-sale-caption">Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div> 
         </div>
       </div>
     </footer>
     <section class="modal modal-feedback">
-        <h2>Напишите нам</h2>
-        <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="feedback-data">
           <p class="feedback-item">
             <label for="feedback-date">Ваше имя:</label>
             <input id="feedback-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
@@ -205,13 +206,14 @@
             <label for="feedback-mail">Ваш e-mail:</label>
             <input id="feedback-mail" type="text" name="mail" value="" placeholder="Для отправки ответа">
           </p>
-          <p class="feedback-item">
+          </div>
+          <p class="feedback-item feedback-item-text">
             <label for="feedback-text">Текст письма:</label>
-            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
+            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме" >
           </p>
           <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
