@@ -747,10 +747,12 @@ a {
 
 .filter-input + label {
   color: #283136;
+  opacity: 1;
 }
 
 .filter-input:hover + label {
   color: #000000;
+  opacity: 1;
 }
 
 .filter-input:disabled + label {
@@ -832,6 +834,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   margin-right: 26px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-selection {
@@ -1272,9 +1275,13 @@ input[type="radio"] {
 
 .templates-examples {
   width: 360px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
   position: relative;
   padding-top: 40px;
+}
+
+.templates-examples img {
+  display: block;
 }
 
 .templates-examples:hover {
@@ -1300,6 +1307,13 @@ input[type="radio"] {
   width: 770px;
   position: relative;
   box-shadow: 0 30px 65px rgba(0,0,0,0.5);
+}
+
+.modal-feedback {
+  position: fixed; 
+  left: 50%; 
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); 
 }
 
 .feedback-data {
