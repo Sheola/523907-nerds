@@ -747,7 +747,6 @@ a {
 
 .filter-input + label {
   color: #283136;
-  opacity: 1;
 }
 
 .filter-input:hover + label {
@@ -849,12 +848,12 @@ a {
   
 }
 
-.sorting-selection  a:hover {
+.sorting-text[href]:hover {
   color: #666666;
 }
 
-.sorting-selection  a:focus
-.sorting-selection  a:active {
+.sorting-text[href]:focus
+.sorting-text[href]:active {
   color: #000000;
 }
 
@@ -881,21 +880,21 @@ a {
   margin-left: 21px;
 }
 
-.icon-up:hover {
+.sorting-order[href]:hover {
   opacity: 0.4;
 }
 
-.icon-up:focus
-.icon-up:active {
+.sorting-order[href]:focus
+.sorting-order[href]:active {
   opacity: 1;
 }
 
-.icon-down:hover {
+.sorting-order[href]:hover {
   opacity: 0.4;
 }
 
-.icon-down:focus
-.icon-down:active {
+.sorting-order[href]:focus
+.sorting-ordera[href]:active {
   opacity: 1;
 }
 
