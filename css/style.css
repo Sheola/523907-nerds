@@ -176,7 +176,7 @@ a {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
-  
+  vertical-align: top;
 }
 
 .slider-controls i::before {
@@ -1230,6 +1230,7 @@ input[type="radio"] {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
 .price-controls input {
