@@ -1591,19 +1591,19 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.footer-social div:hover {
+.footer-social a:hover {
   background-color: #e74246;
 }
 
-.footer-social div:focus,
-.footer-social div:active {
+.footer-social a:focus,
+.footer-social a:active {
   background-color: #d7373b;
   box-shadow: inset 0 30px 0 -28px #c13135;
 }
 
 
-.footer-social div:focus::before,
-.footer-social div:active::before {
+.footer-social a:focus::before,
+.footer-social a:active::before {
   opacity: 0.3;
 }
 
